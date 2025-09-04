@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	babbler "github.com/Shavvey/babbler"
+)
 
 func main() {
 	fmt.Println("Hello, World!")
