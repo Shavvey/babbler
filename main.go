@@ -7,5 +7,6 @@ import (
 
 func main() {
 	fmt.Println("Hello, World!")
-	babbler.GetText("whatever.txt")
+	a := babbler.GetText("whatever.txt")
+	fmt.Println(a)
 }
