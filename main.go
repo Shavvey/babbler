@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello, World!")
-	a := babbler.GetText("whatever.txt")
+	a := babbler.GetText("examples/example1.txt")
 	fmt.Println(a)
 }

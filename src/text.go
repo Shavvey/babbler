@@ -17,11 +17,12 @@ func GetText(file string) string {
 	return Collect(r)
 }
 
+// collect buffered reader into string output
 func Collect(r *bufio.Reader) string {
 	contents := ""
 
 	line, rerr := r.ReadString('\n')
-	for rerr != nil {
+	for rerr == nil {
 		contents += line
 		line, rerr = r.ReadString('\n')
 	}
